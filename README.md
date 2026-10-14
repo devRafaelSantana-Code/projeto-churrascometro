@@ -14,6 +14,18 @@ O projeto consolida conhecimentos de desenvolvimento web nativo, com destaque pa
 
 ---
 
+## 🌐 Demonstração Online
+
+A aplicação está disponível online através da Vercel. Acede ao link para experimentar a calculadora diretamente no navegador, sem necessidade de instalação.
+
+<p align="center">
+  <a href="https://projeto-churrascometro-tau.vercel.app/" target="_blank">
+    <img src="https://img.shields.io/badge/Ver%20Projeto%20Online-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Ver projeto online na Vercel">
+  </a>
+</p>
+
+---
+
 ## 📐 Regras de Negócio e Lógica Matemática
 
 A aplicação utiliza parâmetros de consumo por pessoa que variam consoante a duração do evento, distinguindo entre eventos com menos de 6 horas e eventos com duração igual ou superior a 6 horas.
@@ -34,9 +46,9 @@ Os valores apresentados correspondem aos parâmetros de consumo definidos para o
 
 ## 🛠️ Detalhes Técnicos e Engenharia de Código
 
-- **Estrutura Semântica e Acessibilidade:** Utilização de elementos HTML e de rótulos associados aos campos de formulário através do atributo `for`, facilitando a identificação dos campos e a interação com tecnologias de apoio.
+- **Estrutura Semântica e Acessibilidade:** Utilização de elementos HTML semânticos e de rótulos associados aos campos de formulário através do atributo `for`, facilitando a identificação dos campos e a interação com tecnologias de apoio.
 - **Seleção e Manipulação do DOM:** Utilização de `querySelector()` para selecionar elementos da interface, permitindo ler os valores introduzidos pelo utilizador e apresentar os resultados dos cálculos.
-- **Arquitetura de Estilos com CSS Custom Properties:** Centralização de valores visuais através de variáveis CSS, como `--var`, facilitando a manutenção e a consistência da identidade visual. A interface utiliza uma paleta de cores de inspiração tropical, com tons de verde e ciano.
+- **Arquitetura de Estilos com CSS Custom Properties:** Centralização de valores visuais através de variáveis CSS, facilitando a manutenção e a consistência da identidade visual. A interface utiliza uma paleta de cores de inspiração tropical, com tons de verde e ciano.
 - **Controlo da Seleção de Texto:** Aplicação de `user-select: none` aos elementos definidos para impedir a seleção acidental de texto estático, preservando a possibilidade de selecionar e copiar conteúdos nos campos de entrada e na área de resultados através de `user-select: text`.
 - **Abstração Funcional e Separação de Responsabilidades:** Organização dos cálculos através da função principal `calcular` e das funções auxiliares `carnePP`, `cervejaPP` e `bebidaPP`, que concentram as regras de consumo de cada categoria de insumo.
 - **Conversão de Unidades e Arredondamento:** Utilização de `Math.ceil()` para arredondar quantidades para o inteiro seguinte, permitindo estimar o número de embalagens necessárias quando os cálculos consideram latas de 355 ml e garrafas de 2 litros.
